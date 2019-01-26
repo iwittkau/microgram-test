@@ -1,0 +1,98 @@
+#grid-btn,
+#list-btn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grid-btn {
+    background-image: url('/icons/grid.svg');
+}
+
+#list-btn {
+    background-image: url('/icons/list.svg');
+}
+
+#switch {
+    margin-bottom: 1em;
+}
+
+#switch ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#switch ul li {
+    display: inline;
+}
+
+#switch ul li a {
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.photo,
+.photo-link {
+    min-width: 25%;
+    min-height: 100%;
+}
+
+.photo {
+    object-fit: cover;
+    border-radius: initial;
+    transition: all 200ms ease-in-out;
+    margin: initial;
+    display: initial;
+    animation: fadeIn .5s ease;
+}
+
+.photo-link {
+    display: inline-block;
+}
+
+.photo:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.photo-description {
+    margin-bottom: 3em;
+}
+
+.photo-fullsize {
+    min-height: 100px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 1px;
+}
+
+.column img {
+    margin-top: 2px;
+    vertical-align: middle;
+}
+
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
