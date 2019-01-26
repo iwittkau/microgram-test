@@ -1,3 +1,7 @@
+#microgram hr {
+    width: 100%;
+}
+
 #grid-btn,
 #list-btn {
     cursor: pointer;
@@ -9,11 +13,11 @@
 }
 
 #grid-btn {
-    background-image: url('/icons/grid.svg');
+    background-image: url('/images/grid.svg');
 }
 
 #list-btn {
-    background-image: url('/icons/list.svg');
+    background-image: url('/images/list.svg');
 }
 
 #switch {
@@ -30,6 +34,7 @@
 
 #switch ul li {
     display: inline;
+    padding-left: 0px;
 }
 
 #switch ul li a {
