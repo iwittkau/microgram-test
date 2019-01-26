@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var port, dir string
-	flag.StringVar(&port, "p", "8080", "webserver port")
+	flag.StringVar(&port, "p", os.Getenv("PORT"), "webserver port")
 	flag.StringVar(&dir, "d", ".", "web root directory")
 	flag.Parse()
 
